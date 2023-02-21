@@ -17,22 +17,22 @@ export class TemplateComponent {
   }
   
   prePopulate(){
-    this.form.setValue({
-      gender:"Male",
-      role:"FSJS",
-      message:"Hello an a Js developer",
-      personalDetails:{
-        email: "test@gmail.com",
-        phone:"072351690",
-        username: "John Doe",
-      }
-    })
-    // this.form.form.patchValue({
+    // this.form.setValue({
+    //   gender:"Male",
+    //   role:"FSJS",
+    //   message:"Hello an a Js developer",
     //   personalDetails:{
-    //         email: "test@gmail.com",
-    //         phone:"072351690",
-    //         username: "John Doe",
-    //       }
+    //     email: "test@gmail.com",
+    //     phone:"072351690",
+    //     username: "John Doe",
+    //   }
     // })
+    this.form.form.patchValue({
+      personalDetails:{
+            email: "test@gmail.com",
+            phone:"072351690",
+            username: "John Doe",
+          }
+    })
   }
 }
